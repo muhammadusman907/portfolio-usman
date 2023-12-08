@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     /* background-image: url("public/download.png"); */
     background-color: #232946;
     color: #fff;
@@ -12,180 +12,236 @@ body{
     overflow-x: hidden;
     /* overflow: visible; */
 }
-.nav{
+
+.bg-removed {
+    mix-blend-mode: multiply;
+}
+
+.nav {
     background-color: #232946;
     min-width: 100%;
     color: #fff;
     font-size: 20px;
+    box-shadow: rgba(255, 254, 254, 0.2) 0px 2px 8px 0px;
+
 }
-.side-bar{
+
+.side-bar {
     margin-top: 190px;
     /* height: 420px; */
 }
-.center-bar{
+
+.center-bar {
     width: 40%;
     /* border:solid; */
     margin-top: 120px;
 }
-.typewrite{
+
+.typewrite {
     font-weight: bold;
     font-size: 40px;
 }
-.animation-text{
+
+.animation-text {
     border-bottom: #fff solid;
     width: 70%;
 }
-.inform-button{
+
+.inform-button {
     margin-top: 30px;
+
 }
-.inform-button button{
+
+.inform-button button {
     width: 55%;
-    height: 60px; 
+    height: 60px;
 }
-.my-detail{
+
+.my-detail {
     margin-top: 25px;
 }
+
 /* ================= rigth side top ============= */
-.rigth-side{
+.rigth-side {
     margin-top: 140px;
-/* width: 200px; */
+    /* width: 200px; */
 }
-.rigth-side>img{
+
+.rigth-side>img {
     width: 95%;
     object-fit: contain;
     /* height: auto; */
     padding-top: 12%;
 }
+
 /* ============================= SKILL =================== */
-.skill-parent{
+.skill-parent {
     margin-left: 15%;
     /* margin-top: 10px; */
 }
-.skill{
+
+.skill {
     /* margin-top: 20px; */
     justify-content: space-around;
 }
-.skill-child{
+
+.skill-child {
     border: solid 1px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 7px;
+    /* padding: 10px; */
     margin-top: 20px;
+    box-shadow: rgba(255, 254, 254, 0.2) 0px 2px 8px 0px;
+
 
 }
-.skill-image{
+
+.skill-image {
     width: 50%;
-    height:90px ;
+    height: 90px;
     align-items: center;
     font-weight: bolder;
     font-size: 20px;
 }
+
 .skill-image>img {
     width: 30%;
     height: auto;
     object-fit: contain;
 }
+
 /* ==================================================================== */
 /* ============================== project ============================= */
 /* ==================================================================== */
-.project-parent{
+.project-parent {
     margin-left: 15%;
     justify-content: center;
 }
-.project{
+
+.project {
     margin-top: 20px;
     justify-content: space-around;
 }
-.project-child{
-    display:flex ;
+
+.project-child {
+    display: flex;
     flex-direction: column;
     border-radius: 10px;
-
+    overflow: hidden;
+    box-shadow: rgba(255, 254, 254, 0.2) 0px 2px 8px 0px;
+    height: 460px;
+    /* border: none !important; */
 }
-.project-child img{
-       width: 100%;
+
+.project-child img {
+    width: 100%;
     border-radius: 10px;
-
-       /* height: auto; */
-       /* object-fit: contain; */
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.3s linear;
 }
+
+.project-child img:hover {
+    transform: scale(1.1);
+}
+
+.fa-star {
+    color: #faca15 !important;
+    margin-right: 10px;
+}
+
 @media only screen and (max-width : 767px) {
-    .center-bar{
-        margin-left:28% ;
+    .center-bar {
+        margin-left: 28%;
         width: 95%;
         margin-top: 100px;
-     }
-    .rigth-side{
+    }
+
+    .rigth-side {
         display: none;
     }
-   .typewrite{
-    font-size: 30px;
-    word-wrap: break-word;
-   }
-   .skill{
-    flex-direction: column;
-}
-.skill-child{
-       width: 100%;
-   }
- .my-detail{
-    margin-top: 15px;
-    width: 100%;
-    /* border: solid; */
- }
- .project-parent{
-    margin-top: 20px;
- }
- .project{
-    /* width: 100%; */
-    flex-direction: column;
-   }
-   .project-child{
-    width: 95%;
-   }
-   .project-child img{
-    width: 100%;
- border-radius: 10px;
 
-    /* height: auto; */
-    /* object-fit: contain; */
-}
-}
-@media only screen and (max-width : 640px) { 
-    .inform-button{
+    .typewrite {
+        font-size: 30px;
+        word-wrap: break-word;
+    }
+
+    .skill {
         flex-direction: column;
     }
-    .inform-button button{
-        width: 80%;
-       }
-     
-       .font-icon{
-        height: 40px;
-       }
-       .font-icon i{
-        font-size: 25px;
-       }
-     
- }
 
-@media only screen and (max-width : 400px) {  
-/*   center box  */
-.center-bar{
-   margin-left:25% ;
-   width: 100%;
-   margin-top: 100px;
-}
-.typewrite{
-    font-size: 28px;
-}
+    .skill-child {
+        width: 100%;
+    }
 
-/* center box button */
-        .inform-button{
-            flex-direction: column;
-        }
-       .inform-button button{
+    .my-detail {
+        margin-top: 15px;
+        width: 100%;
+        /* border: solid; */
+    }
+
+    .project-parent {
+        margin-top: 20px;
+    }
+
+    .project {
+        /* width: 100%; */
+        flex-direction: column;
+    }
+
+    .project-child {
         width: 95%;
-       }
+    }
+
+    .project-child img {
+        width: 100%;
+        border-radius: 10px;
+
+        /* height: auto; */
+        /* object-fit: contain; */
+    }
+}
+
+@media only screen and (max-width : 640px) {
+    .inform-button {
+        flex-direction: column;
+    }
+
+    .inform-button button {
+        width: 80%;
+    }
+
+    .font-icon {
+        height: 40px;
+    }
+
+    .font-icon i {
+        font-size: 25px;
+    }
+
+}
+
+@media only screen and (max-width : 400px) {
+
+      /* center box  */
+    .center-bar {
+        margin-left: 25%;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .typewrite {
+        font-size: 28px;
+    }
+
+    /* center box button */
+    .inform-button {
+        flex-direction: column;
+    }
+
+    .inform-button button {
+        width: 95%;
+    }
 }

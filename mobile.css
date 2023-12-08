@@ -1,0 +1,18 @@
+.center-bar {
+    margin-left: 25%;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.typewrite {
+    font-size: 28px;
+}
+
+/* center box button */
+.inform-button {
+    flex-direction: column;
+}
+
+.inform-button button {
+    width: 95%;
+}

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="urdu">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio</title>
+  <title>M.USMAN Portfolio</title>
   <!-- ================================ -->
   <!-- ============ flow bite ============= -->
   <!-- ================================ -->
@@ -21,8 +21,14 @@
   <!-- ================================ -->
   <!-- ============ style.css ============= -->
   <!-- ================================ -->
-
+  <!-- <link rel="stylesheet" media="only screen and (max-width: 640px)" href="./mobile.css" />
+  <link rel="stylesheet" media="only screen and (max-width: 767px)" href="./tablet.css" />
+  <link rel="stylesheet" media="only screen and (max-width: 400px)" href="./other.css" /> -->
+  <!-- <link href="/dist/output.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -35,7 +41,7 @@
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
         <!-- <img src="public/logo.png" class="h-8" alt="Flowbite Logo" /> -->
-        <span class="self-center font-bold text-4xl font-semibold whitespace-nowrap dark:text-white">Muhammad usman</span>
+        <span class="self-center font-bold text-4xl font-semibold whitespace-nowrap dark:text-white">M. USMAN</span>
       </a>
       <button data-collapse-toggle="navbar-solid-bg" type="button"
         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -50,21 +56,16 @@
         <ul
           class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
           <li>
-            <a href="#"
-              class="block py-2 px-3 md:p-0 "
-              aria-current="page">Home</a>
+            <a href="/index.html" class="block py-2 px-3 md:p-0 " aria-current="page">Home</a>
           </li>
           <li>
-            <a href="#"
-              class="block py-2 px-3 md:p-0 ">Services</a>
+            <a href="#" class="block py-2 px-3 md:p-0 ">About</a>
           </li>
           <li>
-            <a href="#"
-              class="block py-2 px-3 md:p-0">Pricing</a>
+            <a href="#mywork" class="block py-2 px-3 md:p-0">Work</a>
           </li>
           <li>
-            <a href="#"
-              class="block py-2 px-3 md:p-0">Contact</a>
+            <a href="#" class="block py-2 px-3 md:p-0">Contact</a>
           </li>
         </ul>
       </div>
@@ -78,7 +79,9 @@
     <!-- ================================================= -->
 
     <div class="side-bar w-24 fixed animate__animated animate__backInLeft">
-     <a href="github.com/muhammadusman907"><div class="font-icon h-16 text-center"><i class="fa-brands fa-github text-5xl text-white  "></i></div></a> 
+      <a href="github.com/muhammadusman907">
+        <div class="font-icon h-16 text-center"><i class="fa-brands fa-github text-5xl text-white  "></i></div>
+      </a>
       <div class="font-icon h-16 text-center"><i class="fa-regular fa-envelope text-5xl text-white "></i></div>
       <div class="font-icon h-16 text-center"><i class="fa-brands fa-facebook text-5xl text-white "></i></div>
       <div class="font-icon h-16 text-center"><i class="fa-brands fa-linkedin text-5xl text-white "></i></div>
@@ -105,17 +108,17 @@
       <p class="w-3/4 mt-2 my-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas recusandae
         necessitatibus fuga deleniti, eveniet expedita, iure aliquam facilis non odit, iste asperiores eius quos optio?
         Necessitatibus voluptate aut mollitia ratione?</p>
-      <div class="flex mt-5 inform-button   "><button type="button"
-          class="text-yellow-400 hover:text-white border border-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-semibold rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Know
+      <div class="flex mt-5 inform-button items-center justify-between"><button type="button"
+          class="text-yellow-400 hover:text-white border border-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-semibold rounded-lg text-lg px-5 py-2.5 text-center me-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Know
           More</button>
         <button type="button"
-          class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-semibold rounded-full text-lg px-5 py-2.5 text-center me-2 mb-2 dark:focus:ring-yellow-900">download
+          class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-semibold rounded-lg text-xl px-5 py-2.5 text-center me-2  dark:focus:ring-yellow-900">Download
           resume</button>
       </div>
     </div>
     <!--==================== second div ================== -->
     <div class="rigth-side h-96 w-96 animate__animated animate__backInRight">
-      <img class="h-96" src="public/gif-develop.gif" alt="">
+      <img class="h-96 bg-removed" src="public/animated.gif" alt="animated gif">
     </div>
   </div>
 
@@ -123,75 +126,75 @@
   <!-- <div class="ms-3 border-2 h-96 w-96 center-bar"></div> -->
   <!--============================== skills ============================= -->
   <div class="skill-parent w-auto h-auto mt-32 ">
-    <h2 data-aos="fade-right" class="text-5xl font-extrabold">Language Tool</h2>
+    <h2 data-aos="fade-right" class="text-5xl font-extrabold h-16 text-center">Language Tool</h2>
     <div class="flex skill">
-      <div data-aos="fade-right" class="skill-child w-2/5 h-24 ">
-        <h2 class="font-extrabold">React</h2>
-        <div class="skill-image flex justify-end ">
-          <p>20 %</p><img src="public/react.png" alt="">
+      <div data-aos="fade-right" class="skill-child w-2/5 h-24 p-6 ">
+        <h2 class="font-semibold text-3xl">React</h2>
+        <div class="skill-image flex justify-end gap-5 ">
+          <p class="font-semibold text-3xl">20 %</p><img src="public/react.png" alt="">
         </div>
       </div>
-      <div data-aos="fade-left" class="skill-child w-2/5 h-24 ">
-        <h2 class="font-extrabold">FireBase</h2>
-        <div class="skill-image flex justify-end ">
-          <p>50 %</p><img src="public/firebase.png" alt="">
+      <div data-aos="fade-left" class="skill-child w-2/5 h-24 p-6 ">
+        <h2 class="font-semibold text-3xl">FireBase</h2>
+        <div class="skill-image flex justify-end gap-5 ">
+          <p class="font-semibold text-3xl">50 %</p><img src="public/firebase.png" alt="">
         </div>
       </div>
       <!-- <div class="w-2/5 h-24 border-2"></div> -->
     </div>
     <!-- second box -->
     <div class="flex skill">
-      <div data-aos="fade-right" class="skill-child w-2/5 h-24 ">
-        <h2 class="font-extrabold">PWA</h2>
-        <div class="skill-image flex justify-end ">
-          <p>60 %</p><img src="public/pwa.png" alt="">
+      <div data-aos="fade-right" class="skill-child w-2/5 h-24 p-6 ">
+        <h2 class="font-semibold text-3xl">PWA</h2>
+        <div class="skill-image flex justify-end gap-5 ">
+          <p class="font-semibold text-3xl">60 %</p><img src="public/pwa.png" alt="">
         </div>
       </div>
-      <div data-aos="fade-left" class="skill-child w-2/5 h-24">
-        <h2 class="font-extrabold">Tailwind Css</h2>
-        <div class="skill-image flex justify-end ">
-          <p>60 %</p><img src="public/tailwind.png" alt="">
-        </div>
-      </div>
-      <!-- <div class="w-2/5 h-24 border-2"></div> -->
-    </div>
-    <!-- third box -->
-    <div class="flex skill">
-      <div data-aos="fade-right" class="skill-child w-2/5 h-24 ">
-        <h2 class="font-extrabold">Bootstrapt CSS</h2>
-        <div class="skill-image flex justify-end ">
-          <p>70 %</p><img src="public/bootstrap.png" alt="">
-        </div>
-      </div>
-      <div data-aos="fade-left" class="skill-child w-2/5 h-24">
-        <h2 class="font-extrabold">GitHub</h2>
-        <div class="skill-image flex justify-end ">
-          <p>30 %</p><img src="public/github.png" alt="">
+      <div data-aos="fade-left" class="skill-child w-2/5 h-24 p-6">
+        <h2 class="font-semibold text-3xl">Tailwind</h2>
+        <div class="skill-image flex justify-end gap-5 ">
+          <p class="font-semibold text-3xl">60 %</p><img src="public/tailwind.png" alt="">
         </div>
       </div>
       <!-- <div class="w-2/5 h-24 border-2"></div> -->
     </div>
     <!-- third box -->
     <div class="flex skill">
-      <div data-aos="fade-right" class="skill-child w-2/5 h-24 ">
-        <h2 class="font-extrabold">Javascript</h2>
-        <div class="skill-image flex justify-end ">
-          <p>60 %</p><img src="public/javascript.png" alt="">
+      <div data-aos="fade-right" class="skill-child w-2/5 h-24 p-6 ">
+        <h2 class="font-semibold text-3xl">Bootstrapt</h2>
+        <div class="skill-image flex justify-end gap-5 ">
+          <p class="font-semibold text-3xl">70 %</p><img src="public/bootstrap.png" alt="">
         </div>
       </div>
-      <div data-aos="fade-left" class="skill-child w-2/5 h-24 ">
-        <h2 class="font-extrabold">CSS3</h2>
-        <div class="skill-image flex justify-end ">
-          <p>70 %</p><img src="public/css.png" alt="">
+      <div data-aos="fade-left" class="skill-child w-2/5 h-24 p-6">
+        <h2 class="font-semibold text-3xl">GitHub</h2>
+        <div class="skill-image flex justify-end gap-5 ">
+          <p class="font-semibold text-3xl">30 %</p><img src="public/github.png" alt="">
+        </div>
+      </div>
+      <!-- <div class="w-2/5 h-24 border-2"></div> -->
+    </div>
+    <!-- third box -->
+    <div class="flex skill">
+      <div data-aos="fade-right" class="skill-child w-2/5 h-24 p-6 ">
+        <h2 class="font-semibold text-3xl">Javascript</h2>
+        <div class="skill-image flex justify-end gap-5 ">
+          <p class="font-semibold text-3xl">60 %</p><img src="public/javascript.png" alt="">
+        </div>
+      </div>
+      <div data-aos="fade-left" class="skill-child w-2/5 h-24 p-6 ">
+        <h2 class="font-semibold text-3xl ">CSS3</h2>
+        <div class="skill-image flex justify-end gap-5 ">
+          <p class="font-semibold text-3xl">70 %</p><img src="public/css.png" alt="">
         </div>
       </div>
       <!-- <div class="w-2/5 h-24 border-2"></div> -->
     </div>
     <div class="flex skill">
-      <div data-aos="fade-left" class="skill-child w-2/5 h-24 ">
-        <h2 class="font-extrabold">HTML5</h2>
-        <div class="skill-image flex justify-end ">
-          <p>80 %</p><img src="public/html.png" alt="">
+      <div data-aos="fade-left" class="skill-child w-2/5 h-24 p-6 ">
+        <h2 class="font-semibold text-3xl">HTML5</h2>
+        <div class="skill-image flex justify-end gap-5 ">
+          <p class="font-semibold text-3xl">80 %</p><img src="public/html.png" alt="">
         </div>
       </div>
       <!-- <div class="skill-child w-2/5 h-24 border-2">
@@ -206,72 +209,119 @@
   <!-- ============================== project ==================================== -->
   <!-- ======================================================================= -->
 
-  <div class="h-auto w-auto project-parent ">
-    <h1 class="font-extrabold text-5xl">project</h1>
-    <div class="w-auto h-96 project flex">
-      <a href="" class="w-2/5 h-88 border project-child"
-    data-aos="fade-right"
-    data-aos-offset="300"
-    data-aos-easing="ease-in-sine"><img class="h-80" src="public/e-commerce.png" alt="">
-        <h2 class="text-center text-4xl font-bold">Reminder</h2>
-        <p class="text-center">task</p>
-      </a>
-      <a data-aos="fade-left" href="" class="w-2/5 h-88 border-2 project-child"
-    data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine"><img class="h-80" src="public/stop-watch.png" alt="">
-        <h2 class="text-4xl font-bold">Stop-watch</h2>
-        <p class="">task</p>
-      </a>
+  <div class="h-auto w-auto project-parent  select-none">
+    <h1 class="font-extrabold text-5xl text-center pt-10 pb-5">WORK</h1>
+    <div id="mywork" class="w-auto h-full project flex">
+      <div href="" class="w-2/5 h-auto border project-child" data-aos="fade-right" data-aos-offset="300"
+        data-aos-easing="ease-in-sine"><img class="h-60" src="public/e-commerce.png" alt="">
+        <div>
+          <h2 class="text-center text-4xl font-bold pt-5">E-Commerce</h2>
+          <div class="flex flex-wrap justify-between gap-5 text-center p-8">
+            <p class="border-b-2 cursor-pointer flex align-center">
+              <i class="fa-solid fa-star"></i>Data Fecting from API's
+            </p>
+            <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>Mobile-First</p>
+            <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>Github Code</p>
+            <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>PWA(Progressive Web App)</p>
+            <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>Live Viwe</p>
+          </div>
+        </div>
+      </div>
+      <div href="" class="w-2/5 h-auto border project-child" data-aos="fade-right" data-aos-offset="300"
+      data-aos-easing="ease-in-sine"><img class="h-60" src="public/pwa-project-reminder.png" alt="">
+      <div>
+        <h2 class="text-center text-4xl font-bold pt-5">Reminder App</h2>
+        <div class="flex flex-wrap justify-between gap-5 text-center p-8">
+          <p class="border-b-2 cursor-pointer flex align-center">
+            <i class="fa-solid fa-star"></i>Data Fecting from API's
+          </p>
+          <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>Mobile-First</p>
+          <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>Github Code</p>
+          <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>PWA(Progressive Web App)</p>
+          <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>Live Viwe</p>
+        </div>
+      </div>
     </div>
-    <h2 class="text-center font-bold text-4xl" data-aos="fade-right">pwa</h2>
+    </div>
+    <!-- <h2 class="text-center font-bold text-4xl" data-aos="fade-right">pwa</h2> -->
     <div class="w-auto h-auto project flex">
-      <a href="" class="w-2/5 h-88 border project-child"
-    data-aos="fade-right"
-    data-aos-offset="300"
-    data-aos-easing="ease-in-sine"><img class="h-80" src="public/pwa-project-reminder.png" alt="">
-        <h2 class="text-center text-4xl font-bold">Reminder</h2>
-        <p class="text-center">task</p>
-      </a>
-      <a data-aos="fade-left" href="" class="w-2/5 h-88 border-2 project-child"
-    data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine"><img class="h-80" src="public/weather-app.png" alt="">
-        <h2 class="text-center text-4xl font-bold">E-commerce Store</h2>
-        <p class="text-center">task</p>
-      </a>
+      <div href="" class="w-2/5 h-auto border project-child" data-aos="fade-right" data-aos-offset="300"
+        data-aos-easing="ease-in-sine"><img class="h-60" src="public/quiz-app.png" alt="">
+        <div>
+          <h2 class="text-center text-4xl font-bold pt-5">E-Commerce</h2>
+          <div class="flex flex-wrap justify-between gap-5 text-center p-8">
+            <p class="border-b-2 cursor-pointer flex align-center">
+              <i class="fa-solid fa-star"></i>Data Fecting from API's
+            </p>
+            <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>Mobile-First</p>
+            <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>Github Code</p>
+            <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>PWA(Progressive Web App)</p>
+            <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>Live Viwe</p>
+          </div>
+        </div>
+      </div>
+      <div href="" class="w-2/5 h-auto border project-child" data-aos="fade-right" data-aos-offset="300"
+        data-aos-easing="ease-in-sine"><img class="h-60" src="public/post-app.png" alt="">
+        <div>
+          <h2 class="text-center text-4xl font-bold pt-5">E-Commerce</h2>
+          <div class="flex flex-wrap justify-between gap-5 text-center p-8">
+            <p class="border-b-2 cursor-pointer flex align-center">
+              <i class="fa-solid fa-star"></i>Data Fecting from API's
+            </p>
+            <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>Mobile-First</p>
+            <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>Github Code</p>
+            <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>PWA(Progressive Web App)</p>
+            <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>Live Viwe</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- <h2 class="text-center font-bold text-4xl" data-aos="fade-right">pwa</h2> -->
     <div class="w-auto h-96 project flex">
-      <a href="" class="w-2/5 h-88 border project-child"
-    data-aos="fade-right"
-    data-aos-offset="300"
-    data-aos-easing="ease-in-sine"><img class="h-80" src="public/quiz-app.png" alt="">
-        <h2 class="text-center text-4xl font-bold">Reminder</h2>
-        <p class="text-center">task</p>
-      </a>
-      <a data-aos="fade-left" href="" class="w-2/5 h-88 border-2 project-child"
-    data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine"><img class="h-80" src="public/game-animation.png" alt="">
-        <h2 class="text-center text-4xl font-bold">E-commerce Store</h2>
-        <p class="text-center">task</p>
-      </a>
+      <div href="" class="w-2/5 h-auto border project-child" data-aos="fade-right" data-aos-offset="300"
+      data-aos-easing="ease-in-sine"><img class="h-60" src="public/stop-watch.png" alt="">
+      <div>
+        <h2 class="text-center text-4xl font-bold pt-5">E-Commerce</h2>
+        <div class="flex flex-wrap justify-between gap-5 text-center p-8">
+          <p class="border-b-2 cursor-pointer flex align-center">
+            <i class="fa-solid fa-star"></i>Data Fecting from API's
+          </p>
+          <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>Mobile-First</p>
+          <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>Github Code</p>
+          <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>PWA(Progressive Web App)</p>
+          <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>Live Viwe</p>
+        </div>
+      </div>
+    </div>
+
+    <div href="" class="w-2/5 h-auto border project-child" data-aos="fade-right" data-aos-offset="300"
+    data-aos-easing="ease-in-sine"><img class="h-60" src="public/game-animation.png" alt="">
+    <div>
+      <h2 class="text-center text-4xl font-bold pt-5">E-Commerce</h2>
+      <div class="flex flex-wrap justify-between gap-5 text-center h-28 p-8">
+        <p class="border-b-2 cursor-pointer flex align-center">
+          <i class="fa-solid fa-star"></i>Data Fecting from API's
+        </p>
+        <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>Mobile-First</p>
+        <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>Github Code</p>
+        <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>PWA(Progressive Web App)</p>
+        <p class="border-b-2 cursor-pointer"><i class="fa-solid fa-star"></i>Live Viwe</p>
+      </div >
+    </div>
+  </div>
     </div>
 
     <h2 class="text-center font-bold text-4xl" data-aos="fade-right">pwa</h2>
- 
+
   </div>
 
 
 
 
   <!-- <h1>hello my name is usman</h1> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
+ 
   <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="app.js"></script>
 
 </body>

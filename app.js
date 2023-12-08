@@ -1,6 +1,6 @@
 // ScrollReveal().reveal('.animate__animated.animate__backInLeft');
 AOS.init();
-
+console.log(window.innerWidth);
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;

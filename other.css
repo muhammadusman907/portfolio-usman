@@ -1,0 +1,15 @@
+.inform-button {
+    flex-direction: column;
+}
+
+.inform-button button {
+    width: 80%;
+}
+
+.font-icon {
+    height: 40px;
+}
+
+.font-icon i {
+    font-size: 25px;
+}

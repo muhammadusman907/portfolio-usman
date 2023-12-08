@@ -1,0 +1,49 @@
+.center-bar {
+    margin-left: 28%;
+    width: 95%;
+    margin-top: 100px;
+}
+
+.rigth-side {
+    display: none;
+}
+
+.typewrite {
+    font-size: 30px;
+    word-wrap: break-word;
+}
+
+.skill {
+    flex-direction: column;
+}
+
+.skill-child {
+    width: 100%;
+}
+
+.my-detail {
+    margin-top: 15px;
+    width: 100%;
+    /* border: solid; */
+}
+
+.project-parent {
+    margin-top: 20px;
+}
+
+.project {
+    /* width: 100%; */
+    flex-direction: column;
+}
+
+.project-child {
+    width: 95%;
+}
+
+.project-child img {
+    width: 100%;
+    border-radius: 10px;
+
+    /* height: auto; */
+    /* object-fit: contain; */
+}
