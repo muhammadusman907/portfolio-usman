@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 * {
     margin: 0;
     padding: 0;
@@ -56,14 +59,19 @@ body {
     width: 70%;
 }
 
- a.inform-button {
+ .inform-button {
     margin-top: 30px;
 
 }
 
 .inform-button button {
-    width: 100%;
+    width: 50%;
     height: 60px;
+}
+.download-btn{
+    width: 50%;
+    height: 60px;
+
 }
 
 .my-detail {
@@ -86,10 +94,10 @@ body {
 }
 
 /* ============================= SKILL =================== */
-.skill-parent {
+/* .skill-parent {
     margin-left: 15%;
-    /* margin-top: 10px; */
-}
+    margin-top: 10px;
+} */
 
 .skill {
     /* margin-top: 20px; */
@@ -165,8 +173,8 @@ body {
 
 @media only screen and (max-width : 767px) {
     .center-bar {
-        margin-left: 28%;
-        width: 95%;
+        /* margin-left: 28%; */
+        width: 100%;
         margin-top: 100px;
     }
 
@@ -184,7 +192,8 @@ body {
     }
 
     .skill-child {
-        width: 100%;
+        margin:10px auto;
+        width: 90%;
     }
 
     .my-detail {
@@ -218,12 +227,16 @@ body {
 @media only screen and (max-width : 640px) {
     .inform-button {
         flex-direction: column;
+        /* align-items:; */
+        /* justify-content: center; */
     }
 
     .inform-button button {
-        width: 80%;
+        width: 85%;
     }
-
+    .download-btn{
+        margin-top: 10px;
+    }
     .font-icon {
         height: 40px;
     }
@@ -249,7 +262,7 @@ body {
 
     /* center box button */
     .inform-button {
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
     .inform-button button {

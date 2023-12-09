@@ -27,7 +27,7 @@
   <!-- <link href="/dist/output.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="./style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
@@ -79,7 +79,7 @@
     <!-- ====================== SIDE BAR =================== -->
     <!-- ================================================= -->
 
-    <div class="side-bar w-24 fixed animate__animated animate__backInLeft md:hidden ;">
+    <div class="side-bar w-24 fixed animate__animated animate__backInLeft xlm:hidden xm:hidden">
       <a href="github.com/muhammadusman907">
         <div class="font-icon h-16 text-center"><i class="fa-brands fa-github text-5xl text-white  "></i></div>
       </a>
@@ -97,28 +97,30 @@
     <!-- ======================center content =================== -->
     <!-- ================================================= -->
     <!--================ first box================ -->
-    <div class="ms-40  h-auto w-100 center-bar animate__animated animate__backInUp ">
+    <div class="h-auto w-auto p-10 center-bar animate__animated animate__backInUp md:ms-40">
       <!-- <h1 class="text-5xl">MUHAMMAD USMAN</h1> -->
-      <h1 class="h-28 ">
+      <h1 class="h-[70px] w-auto">
         <a href="" class="typewrite text-5xl " data-period="2000"
           data-type='["Hi, Im a MUHAMMAD USMAN","I am Frontend Developer", "Passionate Develpor", "I Create User Freindly Website"]'>
           <span class="wrap"></span>
         </a>
       </h1>
       <div class="animation-text"></div>
-      <p class="w-3/4 mt-2 my-detail">Currently exploring new horizons in web development, I recently completed a
+      <p class="text-gray-400 w-3/4 mt-2 my-detail ps-2 " >Currently exploring new horizons in web development, I recently completed a
         rigorous front-end course through SMIT (Saylani Mass IT Training Program) with Sir Ghous Ahmed. My skill set
         encompasses HTML, CSS, Bootstrap, Tailwind CSS, JavaScript, Firebase, and the creation of Progressive Web
         Applications (PWAs). Eager to delve deeper into JavaScript and other advanced concepts to enhance my expertise
         further.</p>
-      <div class="flex mt-5 inform-button items-center justify-between">
+      <div class="flex mt-5 inform-button  xm:ms-20">
         <button type="button"
           class="text-yellow-400 hover:text-white border border-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-semibold rounded-lg text-lg px-5 py-2.5 text-center me-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Know
           More</button>
-        <a class="w-96" href="Beige Elegant Website Developer Resume (2) (2).pdf" download>
-          <button type="button"
-            class="text-white w-96 bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-semibold rounded-lg text-xl px-5 py-2.5 text-center me-2  dark:focus:ring-yellow-900 ">Download
-            resume</button></a>
+        <!-- <a class="w-[300px] xm:w-[100%] " href="Beige Elegant Website Developer Resume (2) (2).pdf" download> -->
+          <a type="button"  href="Beige Elegant Website Developer Resume (2) (2).pdf" download
+            class="xm:w-[85%] h-[80px]; text-white  bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-semibold rounded-lg text-xl px-5 py-2.5 text-center  me-2  dark:focus:ring-yellow-900 download-btn">Download
+            resume
+          <!-- </button> -->
+        </a>
       </div>
     </div>
     <!--==================== second div ================== -->
@@ -129,8 +131,11 @@
 
 
   <!-- <div class="ms-3 border-2 h-96 w-96 center-bar"></div> -->
+  <!-- ================================================================== -->
   <!--============================== skills ============================= -->
-  <div class="skill-parent w-auto h-auto mt-32 ">
+  <!-- ================================================================== -->
+
+  <div class="skill-parent w-auto h-auto mt-32 md:ms-[10%]">
     <h2 data-aos="fade-right" class="text-5xl font-extrabold h-16 text-center">Language Tool</h2>
     <div class="flex skill">
       <div data-aos="fade-right" class="skill-child md:w-2/5 h-24 p-6;  sm:w-[95%]; ">
@@ -357,12 +362,24 @@
   </div>
 
 
-
+  <div class="side-bar w-auto  animate__animated animate__backInLeft flex justify-center gap-5">
+    <a href="github.com/muhammadusman907">
+      <div class="font-icon h-16 text-center"><i class="fa-brands fa-github text-5xl text-white  "></i></div>
+    </a>
+    <div class="font-icon h-16 text-center"><i class="fa-regular fa-envelope text-5xl text-white "></i></div>
+    <div class="font-icon h-16 text-center"><i class="fa-brands fa-facebook text-5xl text-white "></i></div>
+    <div class="font-icon h-16 text-center"><i class="fa-brands fa-linkedin text-5xl text-white "></i></div>
+    <div class="font-icon h-16 text-center"><i class="fa-brands fa-instagram text-5xl text-white "></i></div>
+  </div>
 
   <!-- <h1>hello my name is usman</h1> -->
 
   <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
-  <script src="app.js"></script>
+
+  <script src="./tailwind.config.js" type="module"></script>
+
+  
+  <script src="app.js" type="module"></script>
 
 </body>
 
