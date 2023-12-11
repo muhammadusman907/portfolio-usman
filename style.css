@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 * {
     margin: 0;
     padding: 0;
@@ -261,9 +262,10 @@ body {
     }
 
     /* center box button */
-    .inform-button {
-        /* flex-direction: column; */
-    }
+    /* .inform-button {
+      
+    } */
+    /* flex-direction: column; */
 
     .inform-button button {
         width: 95%;
