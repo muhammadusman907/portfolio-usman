@@ -693,6 +693,14 @@ video {
   height: 100%;
 }
 
+.h-\[10px\] {
+  height: 10px;
+}
+
+.h-\[100px\] {
+  height: 100px;
+}
+
 .w-1 {
   width: 0.25rem;
 }
