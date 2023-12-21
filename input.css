@@ -274,3 +274,12 @@ body {
     }
     
 }
+@media only screen and (max-width:400px) {
+    .side-bar{
+        display: none;
+    }
+    .center-bar{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
