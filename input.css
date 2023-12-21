@@ -68,7 +68,6 @@ body {
 .download-btn{
     width: 50%;
     height: 60px;
-
 }
 
 .my-detail {
@@ -206,10 +205,13 @@ body {
     .project {
         /* width: 100%; */
         flex-direction: column;
+        
     }
 
     .project-child {
         width: 95%;
+        margin-top: 20px;
+        height: auto;
     }
 
     .project-child img {
@@ -227,7 +229,10 @@ body {
         /* align-items:; */
         /* justify-content: center; */
     }
-
+    .download-btn{
+        width: 85%;
+        height: 60px;
+    }
     .inform-button button {
         width: 85%;
     }
@@ -244,9 +249,10 @@ body {
 
 }
 
-@media only screen and (max-width : 400px) {
+@media only screen and (max-width : 374px) {
 
       /* center box  */
+     
     .center-bar {
         margin-left: 25%;
         width: 100%;
@@ -262,8 +268,9 @@ body {
       
     } */
     /* flex-direction: column; */
-
-    .inform-button button {
+    .download-btn{
         width: 95%;
+        height: 60px;
     }
+    
 }
