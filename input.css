@@ -26,12 +26,14 @@ body {
     box-shadow: rgba(255, 254, 254, 0.2) 0px 2px 8px 0px;
 
 }
-.nav img{
+
+.nav img {
     width: 70px;
     height: auto;
 
 }
-.md\:bg-transparent{
+
+.md\:bg-transparent {
     font-size: 15px;
 }
 
@@ -56,7 +58,7 @@ body {
     width: 70%;
 }
 
- .inform-button {
+.inform-button {
     margin-top: 30px;
 
 }
@@ -65,7 +67,8 @@ body {
     width: 80%;
     height: 60px;
 }
-.download-btn{
+
+.download-btn {
     width: 80%;
     height: 60px;
 }
@@ -166,26 +169,36 @@ body {
     color: #faca15 !important;
     margin-right: 10px;
 }
+
 @media only screen and (max-width : 1024px) {
-   .inform-button button{
-    width: 100%;
-   }
-   .center-bar{
-    width: 60%;
-   }
-   .download-btn{
-    width: 100%;
-   }
+    .inform-button button {
+        width: 100%;
+    }
+
+    .center-bar {
+        width: 60%;
+    }
+
+    .download-btn {
+        width: 100%;
+    }
 }
+
 @media only screen and (max-width : 768px) {
     .center-bar {
         /* margin-left: 28%; */
         width: 100%;
         margin-top: 100px;
     }
-    .side-bar{
+
+    .side-bar {
         display: none;
     }
+
+    .skill-image>img {
+        width: 25%;
+    }
+
     .rigth-side {
         display: none;
     }
@@ -200,8 +213,9 @@ body {
     }
 
     .skill-child {
-        margin:10px auto;
+        margin: 10px auto;
         width: 90%;
+        padding: 3%;
     }
 
     .my-detail {
@@ -238,19 +252,28 @@ body {
 @media only screen and (max-width : 640px) {
     .inform-button {
         flex-direction: column;
+        margin: 20px auto;
         /* align-items:; */
         /* justify-content: center; */
     }
-    .download-btn{
+
+    .work {
+        margin-left: -21%;
+    }
+
+    .download-btn {
         width: 100%;
         height: 60px;
     }
+
     .inform-button button {
         width: 100%;
     }
-    .download-btn{
+
+    .download-btn {
         margin-top: 10px;
     }
+
     .font-icon {
         height: 40px;
     }
@@ -263,8 +286,8 @@ body {
 
 @media only screen and (max-width : 374px) {
 
-      /* center box  */
-     
+    /* center box  */
+
     .center-bar {
         margin-left: 25%;
         width: 100%;
@@ -280,17 +303,19 @@ body {
       
     } */
     /* flex-direction: column; */
-    .download-btn{
+    .download-btn {
         width: 100%;
         height: 60px;
     }
-    
+
 }
+
 @media only screen and (max-width:400px) {
-    .side-bar{
+    .side-bar {
         display: none;
     }
-    .center-bar{
+
+    .center-bar {
         margin-left: 0%;
         width: 100%;
     }
