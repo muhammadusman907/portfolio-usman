@@ -579,7 +579,7 @@ export default function Header() {
   const [mounted, setMounted] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const headerRef = useRef<HTMLElement>(null)
-
+  console.log(scrollProgress)
   useEffect(() => {
     setMounted(true)
 
@@ -640,8 +640,8 @@ export default function Header() {
         ref={headerRef}
         className={cn(
           "fixed top-0 w-full z-50 transition-all duration-500",
-          scrolled 
-            ? "py-3 bg-background/95 backdrop-blur-md shadow-lg" 
+          scrolled
+            ? "py-3 bg-background/95 backdrop-blur-md shadow-lg"
             : "py-5 bg-transparent"
         )}
         initial={{ y: -100, opacity: 0 }}
@@ -653,13 +653,13 @@ export default function Header() {
           className="absolute bottom-0 left-0 h-0.5 bg-primary/80"
           style={{ width: `${scrollProgress}%` }}
         /> */}
-        
+
         <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link 
-              href="#home" 
-              className="group flex items-center space-x-3" 
+            <Link
+              href="#home"
+              className="group flex items-center space-x-3"
               onClick={(e) => handleNavClick(e, "#home")}
             >
               <div className="relative shine">
@@ -725,9 +725,9 @@ export default function Header() {
                 <DropdownMenuContent align="end" className="w-48">
                   {socialLinks.map((link, index) => (
                     <DropdownMenuItem key={index} asChild>
-                      <a 
-                        href={link.href} 
-                        target="_blank" 
+                      <a
+                        href={link.href}
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 cursor-pointer"
                       >
@@ -738,7 +738,7 @@ export default function Header() {
                   ))}
                 </DropdownMenuContent>
               </DropdownMenu>
-              
+
               {/* Theme Toggle */}
               {mounted && (
                 <Button
@@ -757,7 +757,7 @@ export default function Header() {
               )}
 
               {/* Resume Button */}
-              <Button 
+              <Button
                 className="hidden md:inline-flex items-center space-x-2 px-4 py-2 h-9 bg-gradient-to-r from-primary to-primary/80 hover:shadow-glow transition-shadow"
                 size="sm"
               >
@@ -805,10 +805,10 @@ export default function Header() {
                   </div>
                   <span className="text-lg font-bold font-playfair">Muhammad Usman</span>
                 </Link>
-                <Button 
-                  variant="ghost" 
-                  size="icon" 
-                  onClick={() => setMobileMenuOpen(false)} 
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => setMobileMenuOpen(false)}
                   aria-label="Close menu"
                   className="rounded-full hover:bg-muted"
                 >
@@ -840,7 +840,7 @@ export default function Header() {
                   </motion.div>
                 ))}
               </nav>
-              
+
               <div className="mt-8 pt-8 border-t border-border/30">
                 <p className="text-sm text-muted-foreground mb-4">Connect with me</p>
                 <div className="flex space-x-3 mb-8">
@@ -866,7 +866,7 @@ export default function Header() {
               </div>
 
               <div className="mt-auto">
-                <Button 
+                <Button
                   className="w-full mt-6 items-center justify-center space-x-2 bg-gradient-to-r from-primary to-primary/80 hover:shadow-glow transition-shadow"
                 >
                   <FileDown className="h-4 w-4" />

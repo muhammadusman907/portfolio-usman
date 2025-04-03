@@ -275,7 +275,7 @@ export default function Skills() {
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 font-dancing">Technical Proficiency</h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto leading-relaxed">
-            With a passion for creating exceptional digital experiences, I've cultivated expertise across the full
+            With a passion for creating exceptional digital experiences, I&apos;ve cultivated expertise across the full
             spectrum of web development technologies and methodologies.
           </p>
         </motion.div>

@@ -671,7 +671,7 @@
 
 "use client"
 
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef, useMemo } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { motion, useScroll, useTransform } from "framer-motion"
@@ -692,7 +692,9 @@ import MYIMAGE from '@/assets/usman.png'
 export default function Hero() {
   const [text, setText] = useState("")
   const [index, setIndex] = useState(0)
-  const phrases = ["Frontend Architect", "React Innovator", "UI/UX Strategist", "Full Stack Developer"]
+  // const phrases = useMemo(() => ["Hello", "Welcome", "Next.js"], []);
+
+  const phrases = useMemo(() => ["Frontend Architect", "React Innovator", "UI/UX Strategist", "Full Stack Developer"],[])
   const [isDeleting, setIsDeleting] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({

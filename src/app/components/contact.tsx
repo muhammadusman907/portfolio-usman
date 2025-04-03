@@ -330,7 +330,7 @@ export default function Contact() {
 
   async function onSubmit(data: FormValues) {
     setIsSubmitting(true)
-
+    console.log(data)
     // Simulate API call
     try {
       // In a real application, you would send the form data to your backend or email service
@@ -350,19 +350,19 @@ export default function Contact() {
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: "Email Address",
-      value: "contact@johndoe.com",
-      link: "mailto:contact@johndoe.com",
+      value: "muhammadusman90712@gmail.com",
+      link: "mailto:muhammadusman90712@gmail.com",
     },
     {
       icon: <Phone className="h-6 w-6 text-primary" />,
       title: "Phone Number",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      value: "+923032412706",
+      link: "tel:+923032412706",
     },
     {
       icon: <MapPin className="h-6 w-6 text-primary" />,
       title: "Location",
-      value: "San Francisco, California",
+      value: "Pakistan, Karachi",
       link: null,
     },
   ]
