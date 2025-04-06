@@ -1,138 +1,9 @@
-// "use client"
-
-// import { motion } from "framer-motion"
-// import Link from "next/link"
-// import { Button } from "@/components/ui/button"
-// import { ArrowUp, Github, Linkedin, Twitter } from "lucide-react"
-
-// export default function Footer() {
-//   const scrollToTop = () => {
-//     window.scrollTo({
-//       top: 0,
-//       behavior: "smooth",
-//     })
-//   }
-
-//   const currentYear = new Date().getFullYear()
-
-//   return (
-//     <footer className="border-t px-10">
-//       <div className="container py-12">
-//         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-//           <div className="md:col-span-2">
-//             <Link href="#home" className="text-2xl font-bold">
-//               Portfolio
-//             </Link>
-//             <p className="mt-4 text-muted-foreground max-w-md">
-//               A passionate frontend developer specializing in creating beautiful, functional, and user-friendly digital
-//               experiences.
-//             </p>
-//             <div className="flex space-x-4 mt-6">
-//               <a
-//                 href="https://github.com"
-//                 target="_blank"
-//                 rel="noopener noreferrer"
-//                 className="text-muted-foreground hover:text-primary transition-colors"
-//               >
-//                 <Github className="h-5 w-5" />
-//               </a>
-//               <a
-//                 href="https://linkedin.com"
-//                 target="_blank"
-//                 rel="noopener noreferrer"
-//                 className="text-muted-foreground hover:text-primary transition-colors"
-//               >
-//                 <Linkedin className="h-5 w-5" />
-//               </a>
-//               <a
-//                 href="https://twitter.com"
-//                 target="_blank"
-//                 rel="noopener noreferrer"
-//                 className="text-muted-foreground hover:text-primary transition-colors"
-//               >
-//                 <Twitter className="h-5 w-5" />
-//               </a>
-//             </div>
-//           </div>
-
-//           <div>
-//             <h3 className="font-medium text-lg mb-4">Quick Links</h3>
-//             <ul className="space-y-2">
-//               <li>
-//                 <Link href="#home" className="text-muted-foreground hover:text-primary transition-colors">
-//                   Home
-//                 </Link>
-//               </li>
-//               <li>
-//                 <Link href="#skills" className="text-muted-foreground hover:text-primary transition-colors">
-//                   Skills
-//                 </Link>
-//               </li>
-//               <li>
-//                 <Link href="#projects" className="text-muted-foreground hover:text-primary transition-colors">
-//                   Projects
-//                 </Link>
-//               </li>
-//               <li>
-//                 <Link href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
-//                   Contact
-//                 </Link>
-//               </li>
-//             </ul>
-//           </div>
-
-//           <div>
-//             <h3 className="font-medium text-lg mb-4">Contact</h3>
-//             <ul className="space-y-2">
-//               <li className="text-muted-foreground">San Francisco, CA</li>
-//               <li>
-//                 <a
-//                   href="mailto:contact@johndoe.com"
-//                   className="text-muted-foreground hover:text-primary transition-colors"
-//                 >
-//                   contact@johndoe.com
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="tel:+15551234567" className="text-muted-foreground hover:text-primary transition-colors">
-//                   +1 (555) 123-4567
-//                 </a>
-//               </li>
-//             </ul>
-//           </div>
-//         </div>
-
-//         <div className="flex flex-col sm:flex-row justify-between items-center mt-12 pt-8 border-t">
-//           <p className="text-sm text-muted-foreground">© {currentYear} John Doe. All rights reserved.</p>
-
-//           <motion.div
-//             initial={{ opacity: 0, y: 10 }}
-//             animate={{ opacity: 1, y: 0 }}
-//             transition={{ delay: 1, duration: 0.5 }}
-//           >
-//             <Button
-//               variant="outline"
-//               size="icon"
-//               className="rounded-full mt-4 sm:mt-0"
-//               onClick={scrollToTop}
-//               aria-label="Scroll to top"
-//             >
-//               <ArrowUp className="h-5 w-5" />
-//             </Button>
-//           </motion.div>
-//         </div>
-//       </div>
-//     </footer>
-//   )
-// }
-
 "use client"
 
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowUp, Github, Linkedin, Twitter, Mail, Phone, MapPin, Heart } from "lucide-react"
-
 export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({
@@ -146,12 +17,12 @@ export default function Footer() {
   const socialLinks = [
     {
       icon: <Github className="h-5 w-5" />,
-      href: "https://github.com",
+      href: "https://github.com/muhammadusman907",
       label: "GitHub",
     },
     {
       icon: <Linkedin className="h-5 w-5" />,
-      href: "https://linkedin.com",
+      href: "https://linkedin.com/in/muhammad-usman907",
       label: "LinkedIn",
     },
     {
@@ -195,7 +66,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={link.label}
-                  className="bg-background hover:bg-primary hover:text-primary-foreground rounded-full p-2.5 transition-all duration-300 hover:scale-110 shadow-sm"
+                  className="bg-background hover:!bg-black hover:text-primary-foreground rounded-full p-2.5 transition-all duration-300 hover:scale-110 shadow-sm"
                 >
                   {link.icon}
                 </a>
@@ -225,24 +96,24 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-center text-muted-foreground">
                 <MapPin className="h-5 w-5 mr-3 text-primary/80" />
-                <span>San Francisco, California</span>
+                <span>Pakistan, Karachi</span>
               </li>
               <li>
                 <a
-                  href="mailto:contact@johndoe.com"
+                  href="mailto:muhammadusman90712@gmail.com"
                   className="flex items-center text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Mail className="h-5 w-5 mr-3 text-primary/80" />
-                  <span>contact@johndoe.com</span>
+                  <span>muhammadusman90712@gmail.com</span>
                 </a>
               </li>
               <li>
                 <a
-                  href="tel:+15551234567"
+                  href="tel:+92-303-4212706"
                   className="flex items-center text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Phone className="h-5 w-5 mr-3 text-primary/80" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+92 303 4212706</span>
                 </a>
               </li>
             </ul>

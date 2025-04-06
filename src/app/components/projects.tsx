@@ -1,262 +1,3 @@
-// "use client"
-
-// import { useState } from "react"
-// import Image from "next/image"
-// import { motion, AnimatePresence } from "framer-motion"
-// import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-// import { Button } from "@/components/ui/button"
-// import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
-// import { Badge } from "@/components/ui/badge"
-// import { Github, ExternalLink, X } from "lucide-react"
-// import EHS from '@/assets/ehs.png'
-// import BUILD from '@/assets/build.png'
-// import CALENDAR from '@/assets/calendar.png'
-
-// const projects = [
-//   // {
-//   //   id: 1,
-//   //   title: "E-Commerce Platform",
-//   //   description: "A full-featured e-commerce platform with product listings, cart, checkout, and admin dashboard.",
-//   //   image: EHS,
-//   //   tags: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "Stripe"],
-//   //   github: "https://github.com",
-//   //   demo: "https://example.com",
-//   //   details:
-//   //     "This e-commerce platform features a responsive design, user authentication, product search and filtering, shopping cart functionality, secure checkout with Stripe, order history, and an admin dashboard for managing products and orders. Built with Next.js for server-side rendering and optimized performance.",
-//   // },
-//   {
-//     id: 1,
-//     title: "EHS Admin Dashboard",
-//     description: "A safety compliance system with employee management and course tracking.",
-//     image: EHS,
-//     tags: ["React", "NestJS", "MySQL",""],
-//     github: "https://github.com",
-//     demo: "https://example.com",
-//     details: "This web-based system helps organizations manage safety training, generate reports, assign courses, and monitor compliance. Features include order reports, employee tracking, and seamless user management.",
-//   },
-//   // {
-//   //   id: 2,
-//   //   title: "Task Management App",
-//   //   description: "A Kanban-style task management application with drag-and-drop functionality.",
-//   //   image: CALENDAR,
-//   //   tags: ["React", "Redux", "Framer Motion", "Firebase", "Styled Components"],
-//   //   github: "https://github.com",
-//   //   demo: "https://example.com",
-//   //   details:
-//   //     "This task management app allows users to create boards, lists, and cards with a drag-and-drop interface. Features include user authentication, real-time updates, task assignments, due dates, labels, and activity tracking. The app uses Firebase for backend services and Framer Motion for smooth animations.",
-//   // },
-//   {
-//     id: 2,
-//     title: "Q-Calendar – Task & Project Management",
-//     description: "A system for task assignment, project tracking, daily standups, and attendance management.",
-//     image: CALENDAR,
-//     tags: ["React", "NestJS", "MySQL", "Tailwind CSS"],
-//     github: "https://github.com",
-//     demo: "https://example.com",
-//     details: "Q-Calendar is a project and task management platform designed to streamline team collaboration. It enables employees to log daily tasks, manage projects, participate in daily standups, and track attendance. The system also provides user reports for performance insights.",
-//   },  
-//   {
-//     id: 3,
-//     title: "BuildNest – Construction Management Web App",
-//     description: "A platform for general contractors to manage subcontractors, projects, and tasks efficiently.",
-//     image: BUILD,
-//     tags: ["React", "NestJS", "MySQL", "Supabase", "ShadCN", "React DnD", "Tailwind CSS"],
-//     github: "https://github.com",
-//     demo: "https://example.com",
-//     details: "BuildNest is a construction management web app designed to streamline project workflows. General contractors can create subcontractors, loan officers, and projects while defining pricing and property details. Homeowners and subcontractors can be invited, and tasks can be assigned and managed with a Kanban view for real-time project tracking.",
-//   }
-  
-//   // {
-//   //   id: 3,
-//   //   title: "Finance Dashboard",
-//   //   description: "An interactive dashboard for tracking personal finances and investments.",
-//   //   image: BUILD,
-//   //   tags: ["Next.js", "D3.js", "Tailwind CSS", "Supabase", "TypeScript"],
-//   //   github: "https://github.com",
-//   //   demo: "https://example.com",
-//   //   details:
-//   //     "This finance dashboard provides users with a comprehensive view of their financial data, including income, expenses, investments, and savings goals. Features include interactive charts and graphs, transaction categorization, budget planning, and financial insights. The dashboard is built with Next.js and uses D3.js for data visualization.",
-//   // },
-//   // {
-//   //   id: 4,
-//   //   title: "Social Media Platform",
-//   //   description: "A social networking platform with real-time messaging and content sharing.",
-//   //   image: "/placeholder.svg?height=600&width=800",
-//   //   tags: ["React", "Node.js", "Socket.io", "MongoDB", "Express"],
-//   //   github: "https://github.com",
-//   //   demo: "https://example.com",
-//   //   details:
-//   //     "This social media platform allows users to create profiles, connect with friends, share posts, and engage in real-time messaging. Features include news feed, notifications, user search, media uploads, and privacy settings. The platform is built with the MERN stack and uses Socket.io for real-time communication.",
-//   // },
-//   // {
-//   //   id: 5,
-//   //   title: "Weather Application",
-//   //   description: "A weather forecast application with location-based services and interactive maps.",
-//   //   image: "/placeholder.svg?height=600&width=800",
-//   //   tags: ["React", "OpenWeather API", "Mapbox", "Tailwind CSS", "PWA"],
-//   //   github: "https://github.com",
-//   //   demo: "https://example.com",
-//   //   details:
-//   //     "This weather application provides users with current weather conditions and forecasts for any location. Features include location search, interactive maps, hourly and daily forecasts, weather alerts, and offline access as a Progressive Web App. The app uses the OpenWeather API for weather data and Mapbox for map visualization.",
-//   // },
-//   // {
-//   //   id: 6,
-//   //   title: "Recipe Sharing Platform",
-//   //   description: "A community-driven recipe sharing platform with search and filtering capabilities.",
-//   //   image: "/placeholder.svg?height=600&width=800",
-//   //   tags: ["Next.js", "GraphQL", "Apollo", "MongoDB", "Cloudinary"],
-//   //   github: "https://github.com",
-//   //   demo: "https://example.com",
-//   //   details:
-//   //     "This recipe sharing platform allows users to discover, create, and share recipes with the community. Features include recipe search and filtering, user profiles, ratings and reviews, ingredient lists, step-by-step instructions, and image uploads. The platform is built with Next.js and uses GraphQL for efficient data fetching.",
-//   // },
-// ]
-
-// export default function Projects() {
-//   const [selectedProject, setSelectedProject] = useState<(typeof projects)[0] | null>(null)
-
-//   const container = {
-//     hidden: { opacity: 0 },
-//     show: {
-//       opacity: 1,
-//       transition: {
-//         staggerChildren: 0.1,
-//       },
-//     },
-//   }
-
-//   const item = {
-//     hidden: { opacity: 0, y: 20 },
-//     show: { opacity: 1, y: 0 },
-//   }
-
-//   return (
-//     <section id="projects" className="py-20">
-//       <div className="container">
-//         <motion.div
-//           initial={{ opacity: 0, y: 20 }}
-//           whileInView={{ opacity: 1, y: 0 }}
-//           transition={{ duration: 0.5 }}
-//           viewport={{ once: true }}
-//           className="text-center mb-16"
-//         >
-//           <h2 className="text-3xl font-bold mb-4">My Projects</h2>
-//           <p className="text-muted-foreground max-w-2xl mx-auto">
-//             Here are some of my recent projects. Each project is built with modern technologies and best practices in
-//             mind.
-//           </p>
-//         </motion.div>
-
-//         <motion.div
-//           variants={container}
-//           initial="hidden"
-//           whileInView="show"
-//           viewport={{ once: true }}
-//           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-//         >
-//           {projects.map((project) => (
-//             <motion.div key={project.id} variants={item} transition={{ duration: 0.5 }}>
-//               <Card className="h-full overflow-hidden hover:shadow-lg transition-all duration-300 group">
-//                 <div className="overflow-hidden relative aspect-video">
-//                   <Image
-//                     src={project.image || "/placeholder.svg"}
-//                     alt={project.title}
-//                     width={800}
-//                     height={600}
-//                     className="object-cover transition-transform duration-500 group-hover:scale-105"
-//                   />
-//                 </div>
-//                 <CardHeader>
-//                   <CardTitle>{project.title}</CardTitle>
-//                   <CardDescription>{project.description}</CardDescription>
-//                 </CardHeader>
-//                 <CardContent>
-//                   <div className="flex flex-wrap gap-2 mb-4">
-//                     {project.tags.map((tag, index) => (
-//                       <Badge key={index} variant="secondary">
-//                         {tag}
-//                       </Badge>
-//                     ))}
-//                   </div>
-//                 </CardContent>
-//                 <CardFooter className="flex justify-between">
-//                   <Button variant="outline" size="sm" onClick={() => setSelectedProject(project)}>
-//                     View Details
-//                   </Button>
-//                   <div className="flex space-x-2">
-//                     <a href={project.github} target="_blank" rel="noopener noreferrer">
-//                       <Button variant="ghost" size="icon">
-//                         <Github className="h-5 w-5" />
-//                       </Button>
-//                     </a>
-//                     <a href={project.demo} target="_blank" rel="noopener noreferrer">
-//                       <Button variant="ghost" size="icon">
-//                         <ExternalLink className="h-5 w-5" />
-//                       </Button>
-//                     </a>
-//                   </div>
-//                 </CardFooter>
-//               </Card>
-//             </motion.div>
-//           ))}
-//         </motion.div>
-
-//         <AnimatePresence>
-//           {selectedProject && (
-//             <Dialog open={!!selectedProject} onOpenChange={() => setSelectedProject(null)}>
-//               <DialogContent className="sm:max-w-[700px] p-0 overflow-hidden">
-//                 <div className="relative aspect-video">
-//                   <Image
-//                     src={selectedProject.image || "/placeholder.svg"}
-//                     alt={selectedProject.title}
-//                     fill
-//                     className="object-cover"
-//                   />
-//                   <Button
-//                     variant="ghost"
-//                     size="icon"
-//                     className="absolute top-2 right-2 bg-background/80 backdrop-blur-sm rounded-full"
-//                     onClick={() => setSelectedProject(null)}
-//                   >
-//                     <X className="h-5 w-5" />
-//                   </Button>
-//                 </div>
-//                 <DialogHeader className="p-6">
-//                   <DialogTitle className="text-2xl">{selectedProject.title}</DialogTitle>
-//                   <DialogDescription className="text-base mt-2">{selectedProject.details}</DialogDescription>
-//                 </DialogHeader>
-//                 <div className="p-6 pt-0">
-//                   <div className="flex flex-wrap gap-2 mb-6">
-//                     {selectedProject.tags.map((tag, index) => (
-//                       <Badge key={index} variant="secondary">
-//                         {tag}
-//                       </Badge>
-//                     ))}
-//                   </div>
-//                   <div className="flex space-x-4">
-//                     <a href={selectedProject.github} target="_blank" rel="noopener noreferrer">
-//                       <Button>
-//                         <Github className="h-5 w-5 mr-2" />
-//                         View Code
-//                       </Button>
-//                     </a>
-//                     <a href={selectedProject.demo} target="_blank" rel="noopener noreferrer">
-//                       <Button variant="outline">
-//                         <ExternalLink className="h-5 w-5 mr-2" />
-//                         Live Demo
-//                       </Button>
-//                     </a>
-//                   </div>
-//                 </div>
-//               </DialogContent>
-//             </Dialog>
-//           )}
-//         </AnimatePresence>
-//       </div>
-//     </section>
-//   )
-// }
-
 "use client"
 
 import { useState, useRef } from "react"
@@ -280,7 +21,7 @@ const projects = [
     image: EHS,
     tags: ["React", "NestJS", "MySQL", "RESTful API"],
     github: "https://github.com",
-    demo: "https://example.com",
+    demo: "https://ehs.hazwoper-osha.com",
     details:
       "This enterprise-grade safety compliance platform empowers organizations to streamline safety training workflows, generate comprehensive analytics reports, assign specialized courses, and monitor regulatory compliance. The system features customizable reporting tools, real-time employee tracking, and seamless user management with role-based access control.",
   },
@@ -292,7 +33,7 @@ const projects = [
     image: CALENDAR,
     tags: ["React", "NestJS", "MySQL", "Tailwind CSS"],
     github: "https://github.com",
-    demo: "https://example.com",
+    demo: "https://calendar.q-sols.com/login",
     details:
       "Q-Calendar is an enterprise project and task management platform engineered to optimize team collaboration and productivity. The system enables employees to document daily tasks, manage complex projects, participate in structured daily standups, and maintain accurate attendance records. Advanced reporting capabilities provide actionable performance insights for both individual contributors and management teams.",
   },
@@ -304,7 +45,7 @@ const projects = [
     image: BUILD,
     tags: ["React", "NestJS", "MySQL", "Supabase", "ShadCN", "React DnD", "Tailwind CSS"],
     github: "https://github.com",
-    demo: "https://example.com",
+    demo: "https://buildnest.net",
     details:
       "BuildNest is a sophisticated construction management platform designed to transform project workflows in the construction industry. General contractors can seamlessly onboard subcontractors and loan officers, create detailed project specifications with comprehensive pricing models and property details. The system facilitates secure invitation workflows for homeowners and subcontractors, while the intuitive task assignment system with Kanban visualization provides real-time project tracking and milestone management.",
   },
@@ -409,7 +150,7 @@ export default function Projects() {
                     <ArrowUpRight className="ml-1 h-4 w-4" />
                   </Button>
                   <div className="flex space-x-1">
-                    <a
+                    {/* <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -418,7 +159,7 @@ export default function Projects() {
                       <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full hover:bg-muted">
                         <Github className="h-4 w-4" />
                       </Button>
-                    </a>
+                    </a> */}
                     <a href={project.demo} target="_blank" rel="noopener noreferrer" aria-label="View Live Demo">
                       <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full hover:bg-muted">
                         <ExternalLink className="h-4 w-4" />

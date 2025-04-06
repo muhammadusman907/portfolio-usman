@@ -107,7 +107,7 @@ export default function Experience() {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-2">
                     <Globe className="h-5 w-5 text-primary/80" />
-                    <span>San Francisco, California</span>
+                    <span>Pakistan, Karachi</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Layers className="h-5 w-5 text-primary/80" />
